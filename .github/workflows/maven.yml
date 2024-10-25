@@ -29,9 +29,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
-
       - name: Run docker-compose
         uses: hoverkraft-tech/compose-action@v2.0.1
         with:
@@ -42,5 +39,5 @@ jobs:
         with:
           time: '20s'
 
-      - name: Run tests
-        run: mvn clean test
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
