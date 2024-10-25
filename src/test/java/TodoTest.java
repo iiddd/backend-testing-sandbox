@@ -19,11 +19,10 @@ public class TodoTest extends BaseTest {
     }
 
     private TodoResponse getExpectResponse() {
-        return
-                new TodoResponse()
-                        .setId("d8b25784-c16f-449a-9006-6972e8a9111b")
-                        .setTitle("Clean House")
-                        .setActive(true)
-                        .setCreated("2022-04-11");
+        return new TodoResponse()
+                .setId("d8b25784-c16f-449a-9006-6972e8a9111b")
+                .setTitle("Clean House")
+                .setActive(true)
+                .setCreated("2022-04-11");
     }
 }
