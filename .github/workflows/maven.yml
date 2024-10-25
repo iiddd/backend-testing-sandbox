@@ -37,7 +37,7 @@ jobs:
         with:
           compose-file: ".docker/docker-compose.yaml"
 
-      - name: Sleep for 30 seconds
+      - name: Sleep for 20 seconds
         uses: jakejarvis/wait-action@master
         with:
           time: '20s'
