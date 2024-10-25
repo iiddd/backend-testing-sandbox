@@ -3,6 +3,8 @@ package models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Objects;
+
 public class TodoResponse {
     @SerializedName("id")
     @Expose
@@ -21,31 +23,46 @@ public class TodoResponse {
         return id;
     }
 
-    public void setId(String id) {
+    public TodoResponse setId(String id) {
         this.id = id;
+        return this;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public TodoResponse setTitle(String title) {
         this.title = title;
+        return this;
     }
 
     public Boolean getActive() {
         return active;
     }
 
-    public void setActive(Boolean active) {
+    public TodoResponse setActive(Boolean active) {
         this.active = active;
+        return this;
     }
 
     public String getCreated() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public TodoResponse setCreated(String created) {
         this.created = created;
+        return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TodoResponse that = (TodoResponse) o;
+        return Objects.equals(id, that.id)
+                && Objects.equals(title, that.title)
+                && Objects.equals(active, that.active)
+                && Objects.equals(created, that.created);
     }
 }
