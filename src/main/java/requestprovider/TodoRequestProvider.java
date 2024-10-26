@@ -11,4 +11,10 @@ public class TodoRequestProvider extends BaseRequestProvider {
                 .setBasePath(TODOS_PATH + todoId)
                 .build();
     }
+
+    public RequestSpecification prepareGetTodoListRequest() {
+        return getDefaultRequestSpecBuilder()
+                .setBasePath(TODOS_PATH)
+                .build();
+    }
 }
