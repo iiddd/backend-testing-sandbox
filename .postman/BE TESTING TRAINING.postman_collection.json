@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "aa152a20-45e8-4426-bdf0-257232ebf743",
+		"name": "BE TESTING TRAINING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2169212"
+	},
+	"item": [
+		{
+			"name": "Valheim",
+			"item": [
+				{
+					"name": "GET Bankamochi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/valheim/characters?name=bankamochi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"valheim",
+								"characters"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "bankamochi"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Todos",
+			"item": [
+				{
+					"name": "GET Todo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/todos/d8b25784-c16f-449a-9006-6972e8a9111b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"todos",
+								"d8b25784-c16f-449a-9006-6972e8a9111b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/todos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"todos",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cats",
+			"item": [
+				{
+					"name": "GET Cat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cats/9e9d4241-20e9-4115-9831-e452c0ebfb29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cats",
+								"9e9d4241-20e9-4115-9831-e452c0ebfb29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Cats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cats/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cats",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dogs",
+			"item": [
+				{
+					"name": "GET Dogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/dogs/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"dogs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Dog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/dogs/e8c2bc79-a7da-4e04-a219-6db6e95e547e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"dogs",
+								"e8c2bc79-a7da-4e04-a219-6db6e95e547e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

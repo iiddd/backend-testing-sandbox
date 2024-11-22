@@ -1,0 +1,71 @@
+{
+  "name": "Ban Kamochi",
+  "inventory": {
+    "weapon": [
+      {
+        "name": "Club",
+        "material": "Black metal",
+        "damage": 50
+      }
+    ],
+    "armor": {
+      "items": [
+        {
+          "name": "Helmet",
+          "material": "Black metal"
+        },
+        {
+          "name": "Cuirass",
+          "material": "Black metal"
+        },
+        {
+          "name": "Greaves",
+          "material": "Black metal"
+        },
+        {
+          "name": "Cape",
+          "material": "Silk"
+        }
+      ],
+      "isSet": true
+    },
+    "food": [
+      {
+        "name": "Blood pudding",
+        "hpBonus": 30,
+        "staminaBonus": 30,
+        "amount": 5
+      },
+      {
+        "name": "Lox meat pie",
+        "hpBonus": 60,
+        "staminaBonus": 15,
+        "amount": 5
+      }
+    ],
+    "potions": [
+      {
+        "name": "Mead Health Minor",
+        "regeneration": 50,
+        "duration": 10,
+        "amount": 4
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Running",
+      "level": 30
+    },
+    {
+      "name": "Block",
+      "level": 20
+    },
+    {
+      "name": "Сlub",
+      "level": 18
+    }
+  ],
+  "created": "2020-03-16",
+  "alive": true
+}
