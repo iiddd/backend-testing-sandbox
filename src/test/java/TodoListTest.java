@@ -16,7 +16,7 @@ public class TodoListTest extends BaseTest {
         ValidatableResponse response = RestUtils.get(requestProvider.prepareGetTodoListRequest());
         response.statusCode(200);
         List<TodoResponse> todoList = Arrays.asList(response.extract().body().as(TodoResponse[].class));
-        Assertions.assertEquals(todoList.size(), 2);
+        Assertions.assertEquals(2, todoList.size());
         Assertions.assertEquals(getExpectResponse(), todoList);
     }
 
