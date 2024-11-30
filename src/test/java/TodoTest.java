@@ -1,5 +1,5 @@
 import io.restassured.response.ValidatableResponse;
-import models.TodoResponse;
+import models.todo.TodoResponse;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import requestprovider.TodoRequestProvider;
