@@ -11,9 +11,6 @@ target/
 
 ### Mac OS ###
 .DS_Store
-/.docker/mysql/db-data/#innodb_temp/
-/.docker/mysql/db-data/#innodb_redo/
-/.docker/mysql/db-data/mysql/
-/.docker/mysql/db-data/performance_schema/
-/.docker/mysql/db-data/undo**
-/.docker/mysql/db-data/binlog.*
+/.docker/mysql/db-data/#innodb_redo/*
+/.docker/mysql/db-data/#innodb_temp/*
+
