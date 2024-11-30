@@ -1,8 +1,0 @@
-services:
-  todo-service:
-    image: wiremock/wiremock:latest
-    container_name: backend-testing-sandbox-service
-    volumes:
-      - ./local-setup:/home/wiremock
-    ports:
-      - "8383:8080"

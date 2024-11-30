@@ -1,0 +1,16 @@
+# Use root/example as user/password credentials
+services:
+
+  db:
+    image: mysql
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword   # Replace with a strong root password
+      MYSQL_DATABASE: mydatabase          # Replace with your database name
+      MYSQL_USER: myuser                  # Replace with your username
+      MYSQL_PASSWORD: mypassword          # Replace with a strong user password
+    ports:
+      - "3306:3306"  # Expose MySQL on localhost
+    volumes:
+      - ./db-data:/var/lib/mysql  # Persist MySQL data
