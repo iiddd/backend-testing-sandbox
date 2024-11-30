@@ -11,3 +11,6 @@ target/
 
 ### Mac OS ###
 .DS_Store
+/.docker/mysql/db-data/#innodb_redo/*
+/.docker/mysql/db-data/#innodb_temp/*
+
