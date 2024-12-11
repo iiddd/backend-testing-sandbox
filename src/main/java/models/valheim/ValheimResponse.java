@@ -71,17 +71,6 @@ public class ValheimResponse {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.name == null) ? 0 : this.name.hashCode()));
-        result = ((result * 31) + ((this.skills == null) ? 0 : this.skills.hashCode()));
-        result = ((result * 31) + ((this.inventory == null) ? 0 : this.inventory.hashCode()));
-        result = ((result * 31) + ((this.alive == null) ? 0 : this.alive.hashCode()));
-        result = ((result * 31) + ((this.created == null) ? 0 : this.created.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -89,7 +78,11 @@ public class ValheimResponse {
         if (!(other instanceof ValheimResponse rhs)) {
             return false;
         }
-        return (((((Objects.equals(this.name, rhs.name)) && (Objects.equals(this.skills, rhs.skills))) && (Objects.equals(this.inventory, rhs.inventory))) && (Objects.equals(this.alive, rhs.alive))) && (Objects.equals(this.created, rhs.created)));
+        return (((((Objects.equals(this.name, rhs.name))
+                && (Objects.equals(this.skills, rhs.skills)))
+                && (Objects.equals(this.inventory, rhs.inventory)))
+                && (Objects.equals(this.alive, rhs.alive)))
+                && (Objects.equals(this.created, rhs.created)));
     }
 
 }

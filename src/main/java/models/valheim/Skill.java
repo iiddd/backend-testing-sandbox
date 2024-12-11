@@ -34,14 +34,6 @@ public class Skill {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.name == null) ? 0 : this.name.hashCode()));
-        result = ((result * 31) + ((this.level == null) ? 0 : this.level.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -49,7 +41,8 @@ public class Skill {
         if (!(other instanceof Skill rhs)) {
             return false;
         }
-        return ((Objects.equals(this.name, rhs.name)) && (Objects.equals(this.level, rhs.level)));
+        return ((Objects.equals(this.name, rhs.name))
+                && (Objects.equals(this.level, rhs.level)));
     }
 
 }

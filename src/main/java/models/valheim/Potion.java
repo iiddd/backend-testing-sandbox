@@ -58,16 +58,6 @@ public class Potion {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.name == null) ? 0 : this.name.hashCode()));
-        result = ((result * 31) + ((this.duration == null) ? 0 : this.duration.hashCode()));
-        result = ((result * 31) + ((this.amount == null) ? 0 : this.amount.hashCode()));
-        result = ((result * 31) + ((this.regeneration == null) ? 0 : this.regeneration.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -75,7 +65,10 @@ public class Potion {
         if (!(other instanceof Potion rhs)) {
             return false;
         }
-        return ((((Objects.equals(this.name, rhs.name)) && (Objects.equals(this.duration, rhs.duration))) && (Objects.equals(this.amount, rhs.amount))) && (Objects.equals(this.regeneration, rhs.regeneration)));
+        return ((((Objects.equals(this.name, rhs.name))
+                && (Objects.equals(this.duration, rhs.duration)))
+                && (Objects.equals(this.amount, rhs.amount)))
+                && (Objects.equals(this.regeneration, rhs.regeneration)));
     }
 
 }

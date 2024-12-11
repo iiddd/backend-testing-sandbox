@@ -58,16 +58,6 @@ public class Food {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.name == null) ? 0 : this.name.hashCode()));
-        result = ((result * 31) + ((this.hpBonus == null) ? 0 : this.hpBonus.hashCode()));
-        result = ((result * 31) + ((this.staminaBonus == null) ? 0 : this.staminaBonus.hashCode()));
-        result = ((result * 31) + ((this.amount == null) ? 0 : this.amount.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -75,7 +65,10 @@ public class Food {
         if (!(other instanceof Food rhs)) {
             return false;
         }
-        return ((((Objects.equals(this.name, rhs.name)) && (Objects.equals(this.hpBonus, rhs.hpBonus))) && (Objects.equals(this.staminaBonus, rhs.staminaBonus))) && (Objects.equals(this.amount, rhs.amount)));
+        return ((((Objects.equals(this.name, rhs.name))
+                && (Objects.equals(this.hpBonus, rhs.hpBonus)))
+                && (Objects.equals(this.staminaBonus, rhs.staminaBonus)))
+                && (Objects.equals(this.amount, rhs.amount)));
     }
 
 }

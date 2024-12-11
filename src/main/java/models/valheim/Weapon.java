@@ -46,15 +46,6 @@ public class Weapon {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.name == null) ? 0 : this.name.hashCode()));
-        result = ((result * 31) + ((this.damage == null) ? 0 : this.damage.hashCode()));
-        result = ((result * 31) + ((this.material == null) ? 0 : this.material.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -62,7 +53,9 @@ public class Weapon {
         if (!(other instanceof Weapon rhs)) {
             return false;
         }
-        return (((Objects.equals(this.name, rhs.name)) && (Objects.equals(this.damage, rhs.damage))) && (Objects.equals(this.material, rhs.material)));
+        return (((Objects.equals(this.name, rhs.name))
+                && (Objects.equals(this.damage, rhs.damage)))
+                && (Objects.equals(this.material, rhs.material)));
     }
 
 }

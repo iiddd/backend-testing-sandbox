@@ -59,16 +59,6 @@ public class Inventory {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.weapon == null) ? 0 : this.weapon.hashCode()));
-        result = ((result * 31) + ((this.armor == null) ? 0 : this.armor.hashCode()));
-        result = ((result * 31) + ((this.food == null) ? 0 : this.food.hashCode()));
-        result = ((result * 31) + ((this.potions == null) ? 0 : this.potions.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -76,7 +66,10 @@ public class Inventory {
         if (!(other instanceof Inventory rhs)) {
             return false;
         }
-        return ((((Objects.equals(this.weapon, rhs.weapon)) && (Objects.equals(this.armor, rhs.armor))) && (Objects.equals(this.food, rhs.food))) && (Objects.equals(this.potions, rhs.potions)));
+        return ((((Objects.equals(this.weapon, rhs.weapon))
+                && (Objects.equals(this.armor, rhs.armor)))
+                && (Objects.equals(this.food, rhs.food)))
+                && (Objects.equals(this.potions, rhs.potions)));
     }
 
 }

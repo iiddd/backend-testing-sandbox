@@ -17,10 +17,10 @@ public class ValheimTest extends BaseTest {
         ValidatableResponse response = RestUtils.get(requestProvider.prepareGetValheimListRequest());
         response.statusCode(200);
         ValheimResponse character = response.extract().body().as(ValheimResponse.class);
-        Assertions.assertEquals(getValheimResponse(), character);
+        Assertions.assertEquals(getExpectedValheimHeroResponse(), character);
     }
 
-    private ValheimResponse getValheimResponse() {
+    private ValheimResponse getExpectedValheimHeroResponse() {
         return new ValheimResponse()
                 .setName("Ban Kamochi")
                 .setInventory(

@@ -35,14 +35,6 @@ public class Armor {
     }
 
     @Override
-    public int hashCode() {
-        int result = 1;
-        result = ((result * 31) + ((this.items == null) ? 0 : this.items.hashCode()));
-        result = ((result * 31) + ((this.isSet == null) ? 0 : this.isSet.hashCode()));
-        return result;
-    }
-
-    @Override
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -50,7 +42,8 @@ public class Armor {
         if (!(other instanceof Armor rhs)) {
             return false;
         }
-        return ((Objects.equals(this.items, rhs.items)) && (Objects.equals(this.isSet, rhs.isSet)));
+        return ((Objects.equals(this.items, rhs.items))
+                && (Objects.equals(this.isSet, rhs.isSet)));
     }
 
 }
